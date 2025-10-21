@@ -4,143 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Puerto Montt Melomano - Artistas">
-    <meta author="Oliver Arens">
-    <title>Artistas - Puerto Montt Melomano</title>
-    <link rel="shorcut icon" href="../imagen/icono.png" type="image/x-icon">
+    <meta name="description" content="Newen Dungun - Artistas">
+    <meta name="author" content="Oliver Arens">
+    <title>Artistas - Newen Dungun</title>
+    <link rel="shortcut icon" href="../imagen/icono.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .navbar-brand {
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .nav-link {
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #bb86fc !important;
-        }
-
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../imagen/header-bg.jpg') center/cover;
-            margin-bottom: 2rem;
-        }
-
-        header h1 {
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-
-        .artist-card {
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin-bottom: 2rem;
-            border: none;
-        }
-
-        .artist-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .artist-img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
-
-        .artist-info {
-            padding: 1.5rem;
-        }
-
-        .artist-name {
-            color: #fff;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #333;
-            padding-bottom: 0.5rem;
-        }
-
-        .artist-detail {
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .artist-detail i {
-            margin-right: 10px;
-            color: #bb86fc;
-        }
-
-        .btn-primary {
-            background-color: #4a4a8a;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
-            margin-right: 0.5rem;
-        }
-
-        .btn-primary:hover {
-            background-color: #5f5fa3;
-        }
-
-        .btn-instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            border: none;
-            padding: 0.5rem 1.5rem;
-            margin-top: 1rem;
-            transition: opacity 0.3s;
-        }
-
-        .btn-instagram:hover {
-            opacity: 0.9;
-        }
-
-        .social-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        footer {
-            background-color: #0a0a0a;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-        }
-
-        footer h2 {
-            color: #bbbbbb;
-            font-size: 1rem;
-            margin: 0.5rem 0;
-            font-weight: 300;
-        }
-    </style>
+    <link rel="stylesheet" href="../files/artistas.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Puerto Montt Melomano</a>
+            <a class="navbar-brand" href="../index.html">Newen Dungun</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -149,7 +25,6 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="artistas.html">Artistas</a></li>
                     <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -157,21 +32,21 @@
 
     <header>
         <div class="container">
-            <h1>Artistas de Puerto Montt</h1>
-            <p class="lead">Conoce a los talentos musicales emergentes de nuestra ciudad</p>
+            <h1>Artistas De La Region De Los Lagos</h1>
+            <p class="lead">Conoce a los talentos musicales emergentes de nuestra hermosa region.</p>
         </div>
     </header>
 
     <main class="container">
         <div class="row">
-
             <div class="col-md-6 col-lg-4">
                 <div class="artist-card">
-                    <img src="../imagen/logo flores del naranjo.jpg" class="artist-img" alt="Logo Flores del naranjo">
+                    <img src="../imagen/Logos/logo flores del naranjo.jpg" class="artist-img"
+                        alt="Logo Flores del naranjo">
                     <div class="artist-info">
                         <h3 class="artist-name">Flores del Naranjo</h3>
                         <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Rock alternativo
+                            <i class="bi bi-music-note-beamed"></i> Género: Math Rock, Post Rock
                         </p>
                         <p class="artist-detail">
                             <i class="bi bi-geo-alt"></i> Ciudad: Puerto Montt
@@ -192,26 +67,25 @@
                 </div>
             </div>
 
-
             <div class="col-md-6 col-lg-4">
                 <div class="artist-card">
-                    <img src="../imagen/logo ruido oscuro.jpg" class="artist-img" alt="Logo Ruido Oscuro">
+                    <img src="../imagen/Logos/logo avenida caracoles.png" class="artist-img" alt="Logo av. caracoles">
                     <div class="artist-info">
-                        <h3 class="artist-name">Ruido Oscuro</h3>
+                        <h3 class="artist-name">Avenida Caracoles</h3>
                         <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Shoegaze
+                            <i class="bi bi-music-note-beamed"></i> Género: Rock Alternativo
                         </p>
                         <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Montt
+                            <i class="bi bi-geo-alt"></i> Ciudad: Ancud
                         </p>
                         <p class="artist-detail">
                             <i class="bi bi-link-45deg"></i> Encuéntralos en:
                         </p>
                         <div class="social-buttons">
-                            <a href="https://soundcloud.com/ruido-oscuro" target="_blank" class="btn btn-primary">
+                            <a href="https://soundcloud.com/user-982663867" target="_blank" class="btn btn-primary">
                                 <i class="bi bi-soundwave"></i> SoundCloud
                             </a>
-                            <a href="https://www.instagram.com/ruidooscuro/" target="_blank" class="btn btn-instagram">
+                            <a href="https://www.instagram.com/av.caracoles/" target="_blank" class="btn btn-instagram">
                                 <i class="bi bi-instagram"></i> Instagram
                             </a>
                         </div>
@@ -221,7 +95,35 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="artist-card">
-                    <img src="../imagen/logo sepulcrum.jpg" class="artist-img" alt="Logo Sepulcrum">
+                    <img src="../imagen/Logos/logo los martinez.png" class="artist-img" alt="Logo Los Martinez">
+                    <div class="artist-info">
+                        <h3 class="artist-name">Los Martinez</h3>
+                        <p class="artist-detail">
+                            <i class="bi bi-music-note-beamed"></i> Género: Pop Rock
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Varas
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
+                        </p>
+                        <div class="social-buttons">
+                            <a href="https://open.spotify.com/intl-es/artist/5Y81ncQ9yxMwd9hkLhNO93" target="_blank"
+                                class="btn btn-spotify">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://www.instagram.com/losmartinez_banda/" target="_blank"
+                                class="btn btn-instagram">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="artist-card">
+                    <img src="../imagen/Logos/logo sepulcrum.jpg" class="artist-img" alt="Logo Sepulcrum">
                     <div class="artist-info">
                         <h3 class="artist-name">Sepulcrum</h3>
                         <p class="artist-detail">
@@ -234,12 +136,57 @@
                             <i class="bi bi-link-45deg"></i> Encuéntralos en:
                         </p>
                         <div class="social-buttons">
-                            <a href="https://sepulcrumdm.bandcamp.com/" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-music-player"></i> Bandcamp
+                            <a href="https://sepulcrumdm.bandcamp.com/" target="_blank" class="btn btn-bandcamp">
+                                <i class="bi bi-music-note-list"></i> Bandcamp
                             </a>
-                            <a href="https://www.instagram.com/_.sepulcrum._/" target="_blank"
-                                class="btn btn-instagram">
+                            <a href="https://www.instagram.com/_.sepulcrum._/" target="_blank" class="btn btn-instagram">
                                 <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="artist-card">
+                    <img src="../imagen/Logos/logo horns.jpg" class="artist-img" alt="Logo Horns">
+                    <div class="artist-info">
+                        <h3 class="artist-name">Horns</h3>
+                        <p class="artist-detail">
+                            <i class="bi bi-music-note-beamed"></i> Género: Black Metal
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Varas
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
+                        </p>
+                        <div class="social-buttons">
+                            <a href="https://livingtemple.bandcamp.com/album/horns-totendienst-vi-antiphonae-omnes-mortum-et-animas-infernalis" target="_blank" class="btn btn-bandcamp">
+                                <i class="bi bi-music-note-list"></i> Bandcamp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="artist-card">
+                    <img src="../imagen/Logos/logo maniaco.jpg" class="artist-img" alt="Logo Maniaco">
+                    <div class="artist-info">
+                        <h3 class="artist-name">Maniaco</h3>
+                        <p class="artist-detail">
+                            <i class="bi bi-music-note-beamed"></i> Género: Brutal Death Metal
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-geo-alt"></i> Ciudad: Osorno
+                        </p>
+                        <p class="artist-detail">
+                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
+                        </p>
+                        <div class="social-buttons">
+                            <a href="https://maniacoband.bandcamp.com/" target="_blank" class="btn btn-bandcamp">
+                                <i class="bi bi-music-note-list"></i> Bandcamp
                             </a>
                         </div>
                     </div>

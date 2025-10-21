@@ -1,0 +1,26 @@
+.form-check {
+    margin: 15px 0;
+}
+
+.form-check-label {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+#forgotPassword {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+#forgotPassword:hover {
+    color: #0056b3;
+}
