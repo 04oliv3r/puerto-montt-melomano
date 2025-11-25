@@ -10,21 +10,32 @@
     <link rel="shortcut icon" href="../imagen/icono.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../files/artistas.css">
+    <link rel="stylesheet" href="design_artistas.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Newen Dungun</a>
+            <a class="navbar-brand navbar-brand-custom" href="../index.html">Newen Dungun</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="bi bi-person-circle"></i> Inicio Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html"><i class="bi bi-person-plus"></i> Registrarse</a>
+                    </li>
+                </ul>
+
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="artistas.html">Artistas</a></li>
                     <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -32,177 +43,69 @@
 
     <header>
         <div class="container">
-            <h1>Artistas De La Region De Los Lagos</h1>
-            <p class="lead">Conoce a los talentos musicales emergentes de nuestra hermosa region.</p>
+            <h1>Artistas De La Región De Los Lagos</h1>
+            <p class="lead">Conoce a los talentos musicales emergentes de nuestra hermosa región.</p>
         </div>
     </header>
 
+    <div class="container mb-5">
+        <div class="card bg-dark border-secondary p-3">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label class="text-light mb-1"><i class="bi bi-search"></i> Nombre</label>
+                    <input type="text" id="busquedaNombre" class="form-control bg-dark text-light border-secondary" placeholder="Buscar banda...">
+                </div>
+                <div class="col-md-3">
+                    <label class="text-light mb-1"><i class="bi bi-geo-alt"></i> Ciudad</label>
+                    <select id="filtroCiudad" class="form-select bg-dark text-light border-secondary">
+                        <option value="">Todas las ciudades</option>
+                        <option value="Puerto Montt">Puerto Montt</option>
+                        <option value="Puerto Varas">Puerto Varas</option>
+                        <option value="Osorno">Osorno</option>
+                        <option value="Ancud">Ancud</option>
+                        <option value="Frutillar">Frutillar</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="text-light mb-1"><i class="bi bi-music-note-beamed"></i> Estilo</label>
+                    <select id="filtroGenero" class="form-select bg-dark text-light border-secondary">
+                        <option value="">Todos los estilos</option>
+                        <option value="Rock">Rock / Math / Post</option>
+                        <option value="Metal">Metal (Death/Black/Brutal)</option>
+                        <option value="Rap">Rap / Hip-Hop</option>
+                        <option value="Jazz">Jazz / Fusión</option>
+                        <option value="Punk">Punk / Ska</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="text-light mb-1"><i class="bi bi-broadcast"></i> Plataforma</label>
+                    <select id="filtroPlataforma" class="form-select bg-dark text-light border-secondary">
+                        <option value="">Cualquiera</option>
+                        <option value="spotify">Spotify</option>
+                        <option value="soundcloud">SoundCloud</option>
+                        <option value="bandcamp">Bandcamp</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo flores del naranjo.jpg" class="artist-img"
-                        alt="Logo Flores del naranjo">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Flores del Naranjo</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Math Rock, Post Rock
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Montt
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://soundcloud.com/flores-del-naranjo" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-soundwave"></i> SoundCloud
-                            </a>
-                            <a href="https://www.instagram.com/flores_del_naranjo/" target="_blank"
-                                class="btn btn-instagram">
-                                <i class="bi bi-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo avenida caracoles.png" class="artist-img" alt="Logo av. caracoles">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Avenida Caracoles</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Rock Alternativo
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Ancud
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://soundcloud.com/user-982663867" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-soundwave"></i> SoundCloud
-                            </a>
-                            <a href="https://www.instagram.com/av.caracoles/" target="_blank" class="btn btn-instagram">
-                                <i class="bi bi-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo los martinez.png" class="artist-img" alt="Logo Los Martinez">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Los Martinez</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Pop Rock
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Varas
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://open.spotify.com/intl-es/artist/5Y81ncQ9yxMwd9hkLhNO93" target="_blank"
-                                class="btn btn-spotify">
-                                <i class="bi bi-spotify"></i> Spotify
-                            </a>
-                            <a href="https://www.instagram.com/losmartinez_banda/" target="_blank"
-                                class="btn btn-instagram">
-                                <i class="bi bi-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo sepulcrum.jpg" class="artist-img" alt="Logo Sepulcrum">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Sepulcrum</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Death Metal
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Montt
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://sepulcrumdm.bandcamp.com/" target="_blank" class="btn btn-bandcamp">
-                                <i class="bi bi-music-note-list"></i> Bandcamp
-                            </a>
-                            <a href="https://www.instagram.com/_.sepulcrum._/" target="_blank" class="btn btn-instagram">
-                                <i class="bi bi-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo horns.jpg" class="artist-img" alt="Logo Horns">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Horns</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Black Metal
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Puerto Varas
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://livingtemple.bandcamp.com/album/horns-totendienst-vi-antiphonae-omnes-mortum-et-animas-infernalis" target="_blank" class="btn btn-bandcamp">
-                                <i class="bi bi-music-note-list"></i> Bandcamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="artist-card">
-                    <img src="../imagen/Logos/logo maniaco.jpg" class="artist-img" alt="Logo Maniaco">
-                    <div class="artist-info">
-                        <h3 class="artist-name">Maniaco</h3>
-                        <p class="artist-detail">
-                            <i class="bi bi-music-note-beamed"></i> Género: Brutal Death Metal
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-geo-alt"></i> Ciudad: Osorno
-                        </p>
-                        <p class="artist-detail">
-                            <i class="bi bi-link-45deg"></i> Encuéntralos en:
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://maniacoband.bandcamp.com/" target="_blank" class="btn btn-bandcamp">
-                                <i class="bi bi-music-note-list"></i> Bandcamp
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row" id="contenedor-artistas">
+            <div class="text-center text-light">
+                <div class="spinner-border" role="status"></div>
+                <p>Cargando artistas...</p>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <h2>Copyright</h2>
-            <h2>Oliver Arens - 2025</h2>
+            <h2>Copyright Oliver Arens - 2025</h2>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jv/validacion_artistas.js"></script>
 </body>
-
 </html>

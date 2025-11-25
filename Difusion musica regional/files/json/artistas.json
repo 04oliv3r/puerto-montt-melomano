@@ -1,0 +1,92 @@
+[
+    {
+        "nombre": "Flores del Naranjo",
+        "genero": "Math Rock, Post Rock",
+        "ciudad": "Puerto Montt",
+        "imagen": "../imagen/Logos/logo flores del naranjo.jpg",
+        "redes": {
+            "soundcloud": "https://soundcloud.com/flores-del-naranjo",
+            "instagram": "https://www.instagram.com/flores_del_naranjo/"
+        }
+    },
+    {
+        "nombre": "Avenida Caracoles",
+        "genero": "Rock Alternativo",
+        "ciudad": "Ancud",
+        "imagen": "../imagen/Logos/logo avenida caracoles.png",
+        "redes": {
+            "soundcloud": "https://soundcloud.com/user-982663867",
+            "instagram": "https://www.instagram.com/av.caracoles/"
+        }
+    },
+    {
+        "nombre": "MutanteStyle",
+        "genero": "Hip-Hop, Rap",
+        "ciudad": "Puerto Montt",
+        "imagen": "../imagen/Logos/logo mutantestyle.jpg",
+        "redes": {
+            "soundcloud": "https://soundcloud.com/mutantestyle",
+            "instagram": "https://www.instagram.com/mutantestyle_2004/?hl=es"
+        }
+    },
+    {
+        "nombre": "Felipe Wainraihgt Trío",
+        "genero": "Jazz, Fusión",
+        "ciudad": "Frutillar",
+        "imagen": "../imagen/Logos/logo felipe wainraihgt trío.jpg",
+        "redes": {
+            "spotify": "https://open.spotify.com/intl-es/artist/4p0skZ9CC8vyL4tY2Tz2oz",
+            "instagram": "https://www.instagram.com/felipewainraihgttrio"
+        }
+    },
+    {
+        "nombre": "Los Martinez",
+        "genero": "Pop Rock",
+        "ciudad": "Puerto Varas",
+        "imagen": "../imagen/Logos/logo los martinez.png",
+        "redes": {
+            "spotify": "https://open.spotify.com/intl-es/artist/5Y81ncQ9yxMwd9hkLhNO93",
+            "instagram": "https://www.instagram.com/losmartinez_banda/"
+        }
+    },
+    {
+        "nombre": "Grito Subterraneo",
+        "genero": "Ska, Punk Rock",
+        "ciudad": "Puerto Montt",
+        "imagen": "../imagen/Logos/logo grito subterraneo.jpg",
+        "redes": {
+            "spotify": "https://open.spotify.com/intl-es/artist/2zhMIUmlkYxaMe6pcaXoyf",
+            "instagram": "https://www.instagram.com/elgritosubterraneo/"
+          }
+    },
+    {
+        "nombre": "Sepulcrum",
+        "genero": "Death Metal",
+        "ciudad": "Puerto Montt",
+        "imagen": "../imagen/Logos/logo sepulcrum.jpg",
+        "redes": {
+            "bandcamp": "https://sepulcrumdm.bandcamp.com/",
+            "instagram": "https://www.instagram.com/_.sepulcrum._/"
+        }
+    },
+    {
+        "nombre": "Horns",
+        "genero": "Black Metal",
+        "ciudad": "Puerto Varas",
+        "imagen": "../imagen/Logos/logo horns.jpg",
+        "redes": {
+            "bandcamp": "https://livingtemple.bandcamp.com/album/horns-totendienst-vi-antiphonae-omnes-mortum-et-animas-infernalis",
+            "facebook": "https://www.facebook.com/ad.penumbraes/"
+        }
+    },
+    {
+        "nombre": "Maniaco",
+        "genero": "Brutal Death Metal",
+        "ciudad": "Osorno",
+        "imagen": "../imagen/Logos/logo maniaco.jpg",
+        "redes": {
+            "bandcamp": "https://maniacoband.bandcamp.com/",
+            "facebook": "https://www.facebook.com/vetemaband"
+        }
+    }
+]
